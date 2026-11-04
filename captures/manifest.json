@@ -1,0 +1,414 @@
+﻿[
+    {
+        "image_sha256":  "A747274810AE5AE5B74C54411E2DECA190F2F6D881D7B575BEEF834EC5184363",
+        "source":  "resultats/01-compilation.txt",
+        "lines":  [
+                      {
+                          "line":  15,
+                          "text":  "[INFO] Changes detected - recompiling the module! :source"
+                      },
+                      {
+                          "line":  16,
+                          "text":  "[INFO] Compiling 14 source files with javac [debug release 17] to target\\classes"
+                      },
+                      {
+                          "line":  18,
+                          "text":  "[INFO] BUILD SUCCESS"
+                      },
+                      {
+                          "line":  20,
+                          "text":  "[INFO] Total time:  6.759 s"
+                      }
+                  ],
+        "kind":  "extrait de logs, pas screenshot",
+        "source_sha256":  "C4F3E624802072B1DB90D046EF5CA9AD36DE8985AE53DC693EA8B1483C1D9D20",
+        "file":  "captures/01-compilation.png"
+    },
+    {
+        "image_sha256":  "77F34828744B96514ABB0288FA200B7B9F05985BC3510DE574FC55064B2050FF",
+        "source":  "resultats/mainapp-complet.txt",
+        "lines":  [
+                      {
+                          "line":  15,
+                          "text":  "=== INITIALISATION HIBERNATE ==="
+                      },
+                      {
+                          "line":  18,
+                          "text":  "=== INITIALISATION DES DONNEES ==="
+                      },
+                      {
+                          "line":  27,
+                          "text":  "Jeu existant conservé : aucune réinitialisation."
+                      },
+                      {
+                          "line":  52,
+                          "text":  "Utilisateurs=10, Salles=8, Reservations=32"
+                      },
+                      {
+                          "line":  1223,
+                          "text":  "État final : Utilisateurs=10, Salles=8, Reservations=32"
+                      }
+                  ],
+        "kind":  "extrait de logs, pas screenshot",
+        "source_sha256":  "7A4AEF6D4AABE9163D77DA81787DF17122C67515D1EE387A75667B7171CE7AC5",
+        "file":  "captures/02-initialisation-donnees.png"
+    },
+    {
+        "image_sha256":  "B87B83A3D257CB31C682474F527B34E41C7153EBDE96D727E382DB28BFC94976",
+        "source":  "resultats/mainapp-complet.txt",
+        "lines":  [
+                      {
+                          "line":  70,
+                          "text":  "Utilisateur[id=1, nom=Etudiant 1, email=etudiant1@example.test, version=0]"
+                      },
+                      {
+                          "line":  71,
+                          "text":  "Utilisateur[id=2, nom=Etudiant 2, email=etudiant2@example.test, version=0]"
+                      },
+                      {
+                          "line":  72,
+                          "text":  "Utilisateur[id=3, nom=Etudiant 3, email=etudiant3@example.test, version=0]"
+                      },
+                      {
+                          "line":  73,
+                          "text":  "Utilisateur[id=4, nom=Etudiant 4, email=etudiant4@example.test, version=0]"
+                      },
+                      {
+                          "line":  74,
+                          "text":  "Utilisateur[id=5, nom=Etudiant 5, email=etudiant5@example.test, version=0]"
+                      },
+                      {
+                          "line":  75,
+                          "text":  "Utilisateur[id=6, nom=Etudiant 6, email=etudiant6@example.test, version=0]"
+                      },
+                      {
+                          "line":  76,
+                          "text":  "Utilisateur[id=7, nom=Etudiant 7, email=etudiant7@example.test, version=0]"
+                      },
+                      {
+                          "line":  77,
+                          "text":  "Utilisateur[id=8, nom=Etudiant 8, email=etudiant8@example.test, version=0]"
+                      },
+                      {
+                          "line":  78,
+                          "text":  "Utilisateur[id=9, nom=Etudiant 9, email=etudiant9@example.test, version=0]"
+                      },
+                      {
+                          "line":  79,
+                          "text":  "Utilisateur[id=10, nom=Etudiant 10, email=etudiant10@example.test, version=0]"
+                      }
+                  ],
+        "kind":  "extrait de logs, pas screenshot",
+        "source_sha256":  "7A4AEF6D4AABE9163D77DA81787DF17122C67515D1EE387A75667B7171CE7AC5",
+        "file":  "captures/03-liste-utilisateurs.png"
+    },
+    {
+        "image_sha256":  "BCEB00CACDA8FB3BB41E14551C9A425A7C0632A712DF0D68E6D39529339D2DEB",
+        "source":  "resultats/mainapp-complet.txt",
+        "lines":  [
+                      {
+                          "line":  98,
+                          "text":  "Salle[id=1, nom=Salle A, capacite=20, version=0]"
+                      },
+                      {
+                          "line":  99,
+                          "text":  "Salle[id=2, nom=Salle B, capacite=40, version=0]"
+                      },
+                      {
+                          "line":  100,
+                          "text":  "Salle[id=3, nom=Salle C, capacite=12, version=0]"
+                      },
+                      {
+                          "line":  101,
+                          "text":  "Salle[id=4, nom=Salle Informatique, capacite=25, version=0]"
+                      },
+                      {
+                          "line":  102,
+                          "text":  "Salle[id=5, nom=Salle Réunion, capacite=10, version=0]"
+                      },
+                      {
+                          "line":  103,
+                          "text":  "Salle[id=6, nom=Amphithéâtre, capacite=120, version=0]"
+                      },
+                      {
+                          "line":  104,
+                          "text":  "Salle[id=7, nom=Salle Projet, capacite=16, version=0]"
+                      },
+                      {
+                          "line":  105,
+                          "text":  "Salle[id=8, nom=Salle Formation, capacite=30, version=0]"
+                      }
+                  ],
+        "kind":  "extrait de logs, pas screenshot",
+        "source_sha256":  "7A4AEF6D4AABE9163D77DA81787DF17122C67515D1EE387A75667B7171CE7AC5",
+        "file":  "captures/04-liste-salles.png"
+    },
+    {
+        "image_sha256":  "E11DC4E1FFBB995D55449D8AF4FA58AE0D407842127FB75F9CEC64417E381221",
+        "source":  "resultats/mainapp-complet.txt",
+        "lines":  [
+                      {
+                          "line":  257,
+                          "text":  "Créée : Reservation[id=39, debut=2027-02-02T14:00, fin=2027-02-02T15:00, version=0]"
+                      },
+                      {
+                          "line":  325,
+                          "text":  "Modifiée : Reservation[id=39, debut=2027-02-02T14:00, fin=2027-02-02T16:00, version=1]"
+                      },
+                      {
+                          "line":  751,
+                          "text":  "Salles libres=7"
+                      },
+                      {
+                          "line":  790,
+                          "text":  "Refus attendu : Chevauchement horaire pour la salle 1"
+                      },
+                      {
+                          "line":  941,
+                          "text":  "Suppression vérifiée : présent=false"
+                      }
+                  ],
+        "kind":  "extrait de logs, pas screenshot",
+        "source_sha256":  "7A4AEF6D4AABE9163D77DA81787DF17122C67515D1EE387A75667B7171CE7AC5",
+        "file":  "captures/05-crud-reservations.png"
+    },
+    {
+        "image_sha256":  "DCA5B5EA78010078D66DBDCEA7C5DC67E54F3F66D5FC9DAF81E032D8C92AFAE9",
+        "source":  "resultats/mainapp-complet.txt",
+        "lines":  [
+                      {
+                          "line":  327,
+                          "text":  "=== REQUETES JPQL ==="
+                      },
+                      {
+                          "line":  498,
+                          "text":  "Par salle=5, par utilisateur=5, après date=1, intersection intervalle=1"
+                      }
+                  ],
+        "kind":  "extrait de logs, pas screenshot",
+        "source_sha256":  "7A4AEF6D4AABE9163D77DA81787DF17122C67515D1EE387A75667B7171CE7AC5",
+        "file":  "captures/06-requetes-jpql.png"
+    },
+    {
+        "image_sha256":  "8B774B1407C9D5C774774D8F94CC70197FEDC88909C6D7186115EF83485CABA5",
+        "source":  "resultats/mainapp-complet.txt",
+        "lines":  [
+                      {
+                          "line":  500,
+                          "text":  "=== CRITERIA API ==="
+                      },
+                      {
+                          "line":  548,
+                          "text":  "Aucun filtre=33"
+                      },
+                      {
+                          "line":  596,
+                          "text":  "Nom salle=5"
+                      },
+                      {
+                          "line":  664,
+                          "text":  "Filtres combinés=1"
+                      },
+                      {
+                          "line":  712,
+                          "text":  "Aucun résultat=0"
+                      }
+                  ],
+        "kind":  "extrait de logs, pas screenshot",
+        "source_sha256":  "7A4AEF6D4AABE9163D77DA81787DF17122C67515D1EE387A75667B7171CE7AC5",
+        "file":  "captures/07-criteria-api.png"
+    },
+    {
+        "image_sha256":  "8E72BA745F0C252CE8F598EB2F54D5FF55E335D5A1BF357B8DE3EC87330EE681",
+        "source":  "resultats/04-migration.txt",
+        "lines":  [
+                      {
+                          "line":  9,
+                          "text":  "Migration v1 appliquée : db/migration/v1_0_initial_schema.sql"
+                      },
+                      {
+                          "line":  10,
+                          "text":  "PREUVE V1 : description présente=false ; utilisateurs=1 salles=1 reservations=1"
+                      },
+                      {
+                          "line":  11,
+                          "text":  "Connexion v1 fermée ; base persistante sur disque."
+                      },
+                      {
+                          "line":  26,
+                          "text":  "Avant migration au redémarrage : description=false ; utilisateurs=1 salles=1 reservations=1"
+                      },
+                      {
+                          "line":  27,
+                          "text":  "Migration v2 appliquée : db/migration/v2_0_add_description.sql"
+                      },
+                      {
+                          "line":  28,
+                          "text":  "PREUVE V2 : description=true ; index email unique=true ; utilisateurs=1 salles=1 reservations=1 ; données conservées"
+                      },
+                      {
+                          "line":  29,
+                          "text":  "Témoin conservé : Temoin migration / temoin@example.test"
+                      },
+                      {
+                          "line":  31,
+                          "text":  "JPA redémarrée : hbm2ddl=validate réussi ; Utilisateurs=1, Salles=1, Reservations=1"
+                      },
+                      {
+                          "line":  32,
+                          "text":  "Deuxième passage : aucune migration rejouée."
+                      }
+                  ],
+        "kind":  "extrait de logs, pas screenshot",
+        "source_sha256":  "70A1D128A2B7A6DCB4EC216C8DD4AA1582995E9C67FE615E285CB966ABF734FF",
+        "file":  "captures/08-migration-sql.png"
+    },
+    {
+        "image_sha256":  "B0AFCC92B539971949004D3EC9C9404067FA978B0B23EB947E197DB0C7362D69",
+        "source":  "resultats/mainapp-complet.txt",
+        "lines":  [
+                      {
+                          "line":  817,
+                          "text":  "Versions initiales : EM1=1, EM2=1"
+                      },
+                      {
+                          "line":  831,
+                          "text":  "EM1 commit : version=2"
+                      },
+                      {
+                          "line":  857,
+                          "text":  "Conflit optimiste réel détecté ; EM2 rollback effectué, transaction active=false"
+                      },
+                      {
+                          "line":  870,
+                          "text":  "Première modification conservée : 2027-02-02T16:05"
+                      },
+                      {
+                          "line":  1042,
+                          "text":  "2 créations simultanées : commits=1, refus de chevauchement=1, lignes enregistrées=1"
+                      }
+                  ],
+        "kind":  "extrait de logs, pas screenshot",
+        "source_sha256":  "7A4AEF6D4AABE9163D77DA81787DF17122C67515D1EE387A75667B7171CE7AC5",
+        "file":  "captures/09-optimistic-locking.png"
+    },
+    {
+        "image_sha256":  "F5A5A4982C76BD4913B54393FA0C49CF85EC91B6A8E4542530AC4A993D0EF58B",
+        "source":  "resultats/mainapp-complet.txt",
+        "lines":  [
+                      {
+                          "line":  1131,
+                          "text":  "Cache L2 actif, 2 EntityManager distincts : CacheSample[hits=1, misses=1, puts=1, sql=1, ms=4.8185]"
+                      },
+                      {
+                          "line":  1132,
+                          "text":  "Cache désactivé, 2 EntityManager distincts : CacheSample[hits=0, misses=0, puts=0, sql=2, ms=6.3999]"
+                      },
+                      {
+                          "line":  1149,
+                          "text":  "Query Cache (hint explicite) : hits supplémentaires=1"
+                      }
+                  ],
+        "kind":  "extrait de logs, pas screenshot",
+        "source_sha256":  "7A4AEF6D4AABE9163D77DA81787DF17122C67515D1EE387A75667B7171CE7AC5",
+        "file":  "captures/10-cache-second-niveau.png"
+    },
+    {
+        "image_sha256":  "1E25C91204F2F57C63897880482DF677A3FC5278BB0AB14B93A6C67271870E2E",
+        "source":  "resultats/mainapp-complet.txt",
+        "lines":  [
+                      {
+                          "line":  1152,
+                          "text":  "Requetes HQL/JPQL=27"
+                      },
+                      {
+                          "line":  1153,
+                          "text":  "Prepared statements=54"
+                      },
+                      {
+                          "line":  1154,
+                          "text":  "Transactions terminees=12"
+                      },
+                      {
+                          "line":  1155,
+                          "text":  "Transactions reussies=9"
+                      },
+                      {
+                          "line":  1156,
+                          "text":  "Chargements entites=214"
+                      },
+                      {
+                          "line":  1157,
+                          "text":  "Insertions=2"
+                      },
+                      {
+                          "line":  1158,
+                          "text":  "Mises a jour=2"
+                      },
+                      {
+                          "line":  1159,
+                          "text":  "Suppressions=2"
+                      },
+                      {
+                          "line":  1160,
+                          "text":  "L2 hits=9"
+                      },
+                      {
+                          "line":  1161,
+                          "text":  "L2 misses=1"
+                      },
+                      {
+                          "line":  1162,
+                          "text":  "L2 puts=16"
+                      },
+                      {
+                          "line":  1163,
+                          "text":  "Query Cache hits=1"
+                      },
+                      {
+                          "line":  1164,
+                          "text":  "Query Cache misses=1"
+                      },
+                      {
+                          "line":  1168,
+                          "text":  "Duree scenario ms=3069.6025"
+                      },
+                      {
+                          "line":  1198,
+                          "text":  "Rapport enregistré : rapports\\rapport-performance.md"
+                      }
+                  ],
+        "kind":  "extrait de logs, pas screenshot",
+        "source_sha256":  "7A4AEF6D4AABE9163D77DA81787DF17122C67515D1EE387A75667B7171CE7AC5",
+        "file":  "captures/11-rapport-performance.png"
+    },
+    {
+        "image_sha256":  "9093DE98D0E8725C36A95FCD3553BB6497EAFB08DC1AC0EF4BB34E5BC076F690",
+        "source":  "resultats/03-package.txt",
+        "lines":  [
+                      {
+                          "line":  173,
+                          "text":  "[INFO] Tests run: 51, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.08 s -- in com.example.CapstoneTest"
+                      },
+                      {
+                          "line":  189,
+                          "text":  "[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.188 s -- in com.example.MigrationTest"
+                      },
+                      {
+                          "line":  193,
+                          "text":  "[INFO] Tests run: 61, Failures: 0, Errors: 0, Skipped: 0"
+                      },
+                      {
+                          "line":  197,
+                          "text":  "[INFO] Building jar: C:\\reservation-capstone\\target\\reservation-capstone-1.0-SNAPSHOT.jar"
+                      },
+                      {
+                          "line":  199,
+                          "text":  "[INFO] BUILD SUCCESS"
+                      }
+                  ],
+        "kind":  "extrait de logs, pas screenshot",
+        "source_sha256":  "CFD2620B33A87FBAF9A2D3D3DF41B40A4AF2C9C1F7EB12D6AB717AA32AB84534",
+        "file":  "captures/12-tests-junit-build.png"
+    }
+]

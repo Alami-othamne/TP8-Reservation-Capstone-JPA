@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.ehcache.org/v3" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.ehcache.org/v3 http://www.ehcache.org/schema/ehcache-core-3.8.xsd">
+ <cache alias="com.example.model.Salle"><heap unit="entries">1000</heap></cache>
+ <cache alias="default-query-results-region"><heap unit="entries">1000</heap></cache>
+ <cache alias="default-update-timestamps-region"><heap unit="entries">1000</heap></cache>
+</config>

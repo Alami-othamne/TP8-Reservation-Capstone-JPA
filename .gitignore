@@ -1,0 +1,14 @@
+target/
+.idea/
+*.iml
+.env
+*.mv.db
+*.trace.db
+*.lock.db
+*.h2.db
+*.tmp
+*.log
+secrets/
+*.key
+*.pem
+__pycache__/

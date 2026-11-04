@@ -1,0 +1,203 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.example:reservation-capstone >------------------
+[INFO] Building reservation-capstone 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ reservation-capstone ---
+[INFO] Deleting C:\reservation-capstone\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ reservation-capstone ---
+[INFO] Copying 5 resources from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.11.0:compile (default-compile) @ reservation-capstone ---
+[INFO] Changes detected - recompiling the module! :source
+[INFO] Compiling 14 source files with javac [debug release 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ reservation-capstone ---
+[INFO] Copying 0 resource from src\test\resources to target\test-classes
+[INFO] 
+[INFO] --- compiler:3.11.0:testCompile (default-testCompile) @ reservation-capstone ---
+[INFO] Changes detected - recompiling the module! :dependency
+[INFO] Compiling 2 source files with javac [debug release 17] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.2.5:test (default-test) @ reservation-capstone ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running com.example.CapstoneTest
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Versions initiales : EM1=0, EM2=0
+EM1 commit : version=1
+Conflit optimiste réel détecté ; EM2 rollback effectué, transaction active=false
+Première modification conservée : 2090-01-10T10:05
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+# Rapport de performance Hibernate
+
+Mesures réelles de cette exécution ; ce scénario pédagogique n'est pas un benchmark de charge.
+
+| Indicateur | Valeur |
+|---|---:|
+| Requetes HQL/JPQL | 1 |
+| Prepared statements | 6 |
+| Transactions terminees | 3 |
+| Transactions reussies | 3 |
+| Chargements entites | 2 |
+| Insertions | 3 |
+| Mises a jour | 0 |
+| Suppressions | 0 |
+| L2 hits | 0 |
+| L2 misses | 0 |
+| L2 puts | 0 |
+| Query Cache hits | 0 |
+| Query Cache misses | 0 |
+| Query Cache puts | 0 |
+| Conflits optimistes | 0 |
+| Requete la plus lente ms | 0 |
+| Duree scenario ms | 0.179 |
+
+Périmètre : compteur de la SessionFactory principale, depuis son ouverture (hors JDBC de migration et factory sans cache). La durée inclut les démonstrations et leurs sorties. Les compteurs sont cumulatifs, sauf les deltas isolés du fichier comparaison-cache.csv.
+
+Le cache L1 appartient à un EntityManager ; le cache L2 partage les entités Salle entre EntityManager. Le Query Cache nécessite le hint org.hibernate.cacheable. HQL/JPQL compte les requêtes ORM ; Prepared statements inclut aussi find, DML et chargements associés.
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+2 créations simultanées : commits=1, refus de chevauchement=1, lignes enregistrées=1
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+[main] ERROR org.hibernate.engine.jdbc.spi.SqlExceptionHelper - Unique index or primary key violation: "PUBLIC.UX_UTILISATEURS_EMAIL ON PUBLIC.UTILISATEURS(EMAIL) VALUES 1"; SQL statement:
+/* insert com.example.model.Utilisateur */ insert into utilisateurs (id, email, nom, version) values (null, ?, ?, ?) [23505-200]
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Utilisateurs=10, Salles=8, Reservations=32
+Jeu existant conservé : aucune réinitialisation.
+Utilisateurs=10, Salles=8, Reservations=32
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+[INFO] Tests run: 51, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 25.08 s -- in com.example.CapstoneTest
+[INFO] Running com.example.MigrationTest
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+[INFO] Tests run: 10, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 2.188 s -- in com.example.MigrationTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 61, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.3.0:jar (default-jar) @ reservation-capstone ---
+[INFO] Building jar: C:\reservation-capstone\target\reservation-capstone-1.0-SNAPSHOT.jar
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  36.739 s
+[INFO] Finished at: 2026-11-04T18:08:40+01:00
+[INFO] ------------------------------------------------------------------------

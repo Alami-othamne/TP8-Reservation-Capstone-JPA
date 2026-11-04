@@ -1,0 +1,38 @@
+﻿[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.example:reservation-capstone >------------------
+[INFO] Building reservation-capstone 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec:3.1.0:java (default-cli) @ reservation-capstone ---
+Migration v1 appliquée : db/migration/v1_0_initial_schema.sql
+PREUVE V1 : description présente=false ; utilisateurs=1 salles=1 reservations=1
+Connexion v1 fermée ; base persistante sur disque.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.781 s
+[INFO] Finished at: 2026-11-04T18:08:44+01:00
+[INFO] ------------------------------------------------------------------------
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------< com.example:reservation-capstone >------------------
+[INFO] Building reservation-capstone 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- exec:3.1.0:java (default-cli) @ reservation-capstone ---
+Avant migration au redémarrage : description=false ; utilisateurs=1 salles=1 reservations=1
+Migration v2 appliquée : db/migration/v2_0_add_description.sql
+PREUVE V2 : description=true ; index email unique=true ; utilisateurs=1 salles=1 reservations=1 ; données conservées
+Témoin conservé : Temoin migration / temoin@example.test
+[com.example.util.MigrationDemo.main()] WARN org.hibernate.orm.connections.pooling - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+JPA redémarrée : hbm2ddl=validate réussi ; Utilisateurs=1, Salles=1, Reservations=1
+Deuxième passage : aucune migration rejouée.
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  6.091 s
+[INFO] Finished at: 2026-11-04T18:08:53+01:00
+[INFO] ------------------------------------------------------------------------

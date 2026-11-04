@@ -1,0 +1,193 @@
+﻿Extraits exacts de resultats/mainapp-complet.txt ; SQL conservé.
+=== INITIALISATION DES DONNEES ===
+Hibernate: 
+    /* select
+        count(u) 
+    from
+        Utilisateur u */ select
+            count(utilisateu0_.id) as col_0_0_ 
+        from
+            utilisateurs utilisateu0_
+Jeu existant conservé : aucune réinitialisation.
+Hibernate: 
+    /* select
+        count(u) 
+    from
+        Utilisateur u */ select
+            count(utilisateu0_.id) as col_0_0_ 
+        from
+            utilisateurs utilisateu0_
+Hibernate: 
+    /* select
+        count(s) 
+    from
+        Salle s */ select
+            count(salle0_.id) as col_0_0_ 
+        from
+            salles salle0_
+Hibernate: 
+    /* select
+        count(r) 
+    from
+        Reservation r */ select
+            count(reservatio0_.id) as col_0_0_ 
+        from
+            reservations reservatio0_
+Utilisateurs=10, Salles=8, Reservations=32
+
+=== LISTE DES UTILISATEURS ===
+Hibernate: 
+    /* select
+        u 
+    from
+        Utilisateur u 
+    order by
+        u.id */ select
+            utilisateu0_.id as id1_2_,
+            utilisateu0_.email as email2_2_,
+            utilisateu0_.nom as nom3_2_,
+            utilisateu0_.version as version4_2_ 
+        from
+            utilisateurs utilisateu0_ 
+        order by
+            utilisateu0_.id
+Utilisateur[id=1, nom=Etudiant 1, email=etudiant1@example.test, version=0]
+Utilisateur[id=2, nom=Etudiant 2, email=etudiant2@example.test, version=0]
+Utilisateur[id=3, nom=Etudiant 3, email=etudiant3@example.test, version=0]
+Utilisateur[id=4, nom=Etudiant 4, email=etudiant4@example.test, version=0]
+Utilisateur[id=5, nom=Etudiant 5, email=etudiant5@example.test, version=0]
+Utilisateur[id=6, nom=Etudiant 6, email=etudiant6@example.test, version=0]
+Utilisateur[id=7, nom=Etudiant 7, email=etudiant7@example.test, version=0]
+Utilisateur[id=8, nom=Etudiant 8, email=etudiant8@example.test, version=0]
+Utilisateur[id=9, nom=Etudiant 9, email=etudiant9@example.test, version=0]
+Utilisateur[id=10, nom=Etudiant 10, email=etudiant10@example.test, version=0]
+
+=== LISTE DES SALLES ===
+Hibernate: 
+    /* select
+        s 
+    from
+        Salle s 
+    order by
+        s.id */ select
+            salle0_.id as id1_1_,
+            salle0_.capacite as capacite2_1_,
+            salle0_.description as descript3_1_,
+            salle0_.nom as nom4_1_,
+            salle0_.version as version5_1_ 
+        from
+            salles salle0_ 
+        order by
+            salle0_.id
+Salle[id=1, nom=Salle A, capacite=20, version=0]
+Salle[id=2, nom=Salle B, capacite=40, version=0]
+Salle[id=3, nom=Salle C, capacite=12, version=0]
+Salle[id=4, nom=Salle Informatique, capacite=25, version=0]
+Salle[id=5, nom=Salle Réunion, capacite=10, version=0]
+Salle[id=6, nom=Amphithéâtre, capacite=120, version=0]
+Salle[id=7, nom=Salle Projet, capacite=16, version=0]
+Salle[id=8, nom=Salle Formation, capacite=30, version=0]
+
+=== LISTE DES RESERVATIONS ===
+Hibernate: 
+    /* select
+        r 
+    from
+        Reservation r 
+    join
+        fetch r.salle 
+    join
+        fetch r.utilisateur 
+    order by
+        r.dateDebut,
+        r.id */ select
+            reservatio0_.id as id1_0_0_,
+            salle1_.id as id1_1_1_,
+            utilisateu2_.id as id1_2_2_,
+            reservatio0_.date_debut as date_deb2_0_0_,
+            reservatio0_.date_fin as date_fin3_0_0_,
+            reservatio0_.salle_id as salle_id5_0_0_,
+            reservatio0_.utilisateur_id as utilisat6_0_0_,
+            reservatio0_.version as version4_0_0_,
+            salle1_.capacite as capacite2_1_1_,
+            salle1_.description as descript3_1_1_,
+            salle1_.nom as nom4_1_1_,
+            salle1_.version as version5_1_1_,
+            utilisateu2_.email as email2_2_2_,
+            utilisateu2_.nom as nom3_2_2_,
+            utilisateu2_.version as version4_2_2_ 
+        from
+            reservations reservatio0_ 
+        inner join
+            salles salle1_ 
+                on reservatio0_.salle_id=salle1_.id 
+        inner join
+            utilisateurs utilisateu2_ 
+                on reservatio0_.utilisateur_id=utilisateu2_.id 
+        order by
+            reservatio0_.date_debut,
+            reservatio0_.id
+Reservation[id=1, debut=2026-11-11T09:00, fin=2026-11-11T11:00, version=0]
+Reservation[id=2, debut=2026-11-11T09:00, fin=2026-11-11T11:00, version=0]
+Reservation[id=3, debut=2026-11-11T09:00, fin=2026-11-11T11:00, version=0]
+Reservation[id=4, debut=2026-11-11T09:00, fin=2026-11-11T11:00, version=0]
+Reservation[id=5, debut=2026-11-11T09:00, fin=2026-11-11T11:00, version=0]
+Reservation[id=6, debut=2026-11-11T09:00, fin=2026-11-11T11:00, version=0]
+Reservation[id=7, debut=2026-11-11T09:00, fin=2026-11-11T11:00, version=0]
+Reservation[id=8, debut=2026-11-11T09:00, fin=2026-11-11T11:00, version=0]
+Reservation[id=9, debut=2026-11-12T09:00, fin=2026-11-12T11:00, version=0]
+Reservation[id=10, debut=2026-11-12T09:00, fin=2026-11-12T11:00, version=0]
+Reservation[id=11, debut=2026-11-12T09:00, fin=2026-11-12T11:00, version=0]
+Reservation[id=12, debut=2026-11-12T09:00, fin=2026-11-12T11:00, version=0]
+Reservation[id=13, debut=2026-11-12T09:00, fin=2026-11-12T11:00, version=0]
+Reservation[id=14, debut=2026-11-12T09:00, fin=2026-11-12T11:00, version=0]
+Reservation[id=15, debut=2026-11-12T09:00, fin=2026-11-12T11:00, version=0]
+Reservation[id=16, debut=2026-11-12T09:00, fin=2026-11-12T11:00, version=0]
+Reservation[id=17, debut=2026-11-13T09:00, fin=2026-11-13T11:00, version=0]
+Reservation[id=18, debut=2026-11-13T09:00, fin=2026-11-13T11:00, version=0]
+Reservation[id=19, debut=2026-11-13T09:00, fin=2026-11-13T11:00, version=0]
+Reservation[id=20, debut=2026-11-13T09:00, fin=2026-11-13T11:00, version=0]
+Reservation[id=21, debut=2026-11-13T09:00, fin=2026-11-13T11:00, version=0]
+Reservation[id=22, debut=2026-11-13T09:00, fin=2026-11-13T11:00, version=0]
+Reservation[id=23, debut=2026-11-13T09:00, fin=2026-11-13T11:00, version=0]
+Reservation[id=24, debut=2026-11-13T09:00, fin=2026-11-13T11:00, version=0]
+Reservation[id=25, debut=2026-11-14T09:00, fin=2026-11-14T11:00, version=0]
+Reservation[id=26, debut=2026-11-14T09:00, fin=2026-11-14T11:00, version=0]
+Reservation[id=27, debut=2026-11-14T09:00, fin=2026-11-14T11:00, version=0]
+Reservation[id=28, debut=2026-11-14T09:00, fin=2026-11-14T11:00, version=0]
+Reservation[id=29, debut=2026-11-14T09:00, fin=2026-11-14T11:00, version=0]
+Reservation[id=30, debut=2026-11-14T09:00, fin=2026-11-14T11:00, version=0]
+Reservation[id=31, debut=2026-11-14T09:00, fin=2026-11-14T11:00, version=0]
+Reservation[id=32, debut=2026-11-14T09:00, fin=2026-11-14T11:00, version=0]
+Hibernate: 
+    /* select
+        u 
+    from
+        Utilisateur u 
+    order by
+        u.id */ select
+            utilisateu0_.id as id1_2_,
+            utilisateu0_.email as email2_2_,
+            utilisateu0_.nom as nom3_2_,
+            utilisateu0_.version as version4_2_ 
+        from
+            utilisateurs utilisateu0_ 
+        order by
+            utilisateu0_.id
+Hibernate: 
+    /* select
+        s 
+    from
+        Salle s 
+    order by
+        s.id */ select
+            salle0_.id as id1_1_,
+            salle0_.capacite as capacite2_1_,
+            salle0_.description as descript3_1_,
+            salle0_.nom as nom4_1_,
+            salle0_.version as version5_1_ 
+        from
+            salles salle0_ 
+        order by
+            salle0_.id
+

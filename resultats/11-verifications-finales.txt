@@ -1,0 +1,10 @@
+12 PNG valides, inspectes visuellement ; textes, lignes et SHA-256 concordants avec les journaux.
+19 liens locaux Markdown verifies ; 12 liens cliquables de captures dans le README, aucune image integree.
+Surefire : 61 tests, 0 echec, 0 erreur, 0 ignore.
+Compilation, tests, packaging, migration v1/v2 et MainApp : BUILD SUCCESS confirme dans chaque journal.
+Migration, validation JPA, effectifs 10/8/32 et conflits de concurrence confirmes.
+JAR verifie : MainApp, configuration JPA/Ehcache et scripts SQL embarques.
+Aucun secret detecte par controle des sources, configurations et motifs de cles ; mot de passe H2 local vide.
+Taille locale totale : 1,025,046 octets ; fichiers destines au depot (hors target/data) : 724,441 octets / 62 fichiers.
+Aucun depot Git local/distant, commit ou push cree par ce travail. Bases H2 et target conserves localement et ignores.
+Limite materielle : captures issues de logs ; pas de screenshots sauvegardes, acces graphique devenu indisponible.

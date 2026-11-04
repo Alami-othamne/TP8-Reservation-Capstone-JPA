@@ -1,0 +1,388 @@
+﻿Extraits exacts de resultats/mainapp-complet.txt ; SQL conservé.
+=== REQUETES JPQL ===
+Hibernate: 
+    /* select
+        r 
+    from
+        Reservation r 
+    join
+        fetch r.salle 
+    join
+        fetch r.utilisateur 
+    where
+        r.salle.id=:id 
+    order by
+        r.dateDebut,
+        r.id */ select
+            reservatio0_.id as id1_0_0_,
+            salle1_.id as id1_1_1_,
+            utilisateu2_.id as id1_2_2_,
+            reservatio0_.date_debut as date_deb2_0_0_,
+            reservatio0_.date_fin as date_fin3_0_0_,
+            reservatio0_.salle_id as salle_id5_0_0_,
+            reservatio0_.utilisateur_id as utilisat6_0_0_,
+            reservatio0_.version as version4_0_0_,
+            salle1_.capacite as capacite2_1_1_,
+            salle1_.description as descript3_1_1_,
+            salle1_.nom as nom4_1_1_,
+            salle1_.version as version5_1_1_,
+            utilisateu2_.email as email2_2_2_,
+            utilisateu2_.nom as nom3_2_2_,
+            utilisateu2_.version as version4_2_2_ 
+        from
+            reservations reservatio0_ 
+        inner join
+            salles salle1_ 
+                on reservatio0_.salle_id=salle1_.id 
+        inner join
+            utilisateurs utilisateu2_ 
+                on reservatio0_.utilisateur_id=utilisateu2_.id 
+        where
+            reservatio0_.salle_id=? 
+        order by
+            reservatio0_.date_debut,
+            reservatio0_.id
+Hibernate: 
+    /* select
+        r 
+    from
+        Reservation r 
+    join
+        fetch r.salle 
+    join
+        fetch r.utilisateur 
+    where
+        r.utilisateur.id=:id 
+    order by
+        r.dateDebut,
+        r.id */ select
+            reservatio0_.id as id1_0_0_,
+            salle1_.id as id1_1_1_,
+            utilisateu2_.id as id1_2_2_,
+            reservatio0_.date_debut as date_deb2_0_0_,
+            reservatio0_.date_fin as date_fin3_0_0_,
+            reservatio0_.salle_id as salle_id5_0_0_,
+            reservatio0_.utilisateur_id as utilisat6_0_0_,
+            reservatio0_.version as version4_0_0_,
+            salle1_.capacite as capacite2_1_1_,
+            salle1_.description as descript3_1_1_,
+            salle1_.nom as nom4_1_1_,
+            salle1_.version as version5_1_1_,
+            utilisateu2_.email as email2_2_2_,
+            utilisateu2_.nom as nom3_2_2_,
+            utilisateu2_.version as version4_2_2_ 
+        from
+            reservations reservatio0_ 
+        inner join
+            salles salle1_ 
+                on reservatio0_.salle_id=salle1_.id 
+        inner join
+            utilisateurs utilisateu2_ 
+                on reservatio0_.utilisateur_id=utilisateu2_.id 
+        where
+            reservatio0_.utilisateur_id=? 
+        order by
+            reservatio0_.date_debut,
+            reservatio0_.id
+Hibernate: 
+    /* select
+        r 
+    from
+        Reservation r 
+    join
+        fetch r.salle 
+    join
+        fetch r.utilisateur 
+    where
+        r.dateDebut>:date 
+    order by
+        r.dateDebut,
+        r.id */ select
+            reservatio0_.id as id1_0_0_,
+            salle1_.id as id1_1_1_,
+            utilisateu2_.id as id1_2_2_,
+            reservatio0_.date_debut as date_deb2_0_0_,
+            reservatio0_.date_fin as date_fin3_0_0_,
+            reservatio0_.salle_id as salle_id5_0_0_,
+            reservatio0_.utilisateur_id as utilisat6_0_0_,
+            reservatio0_.version as version4_0_0_,
+            salle1_.capacite as capacite2_1_1_,
+            salle1_.description as descript3_1_1_,
+            salle1_.nom as nom4_1_1_,
+            salle1_.version as version5_1_1_,
+            utilisateu2_.email as email2_2_2_,
+            utilisateu2_.nom as nom3_2_2_,
+            utilisateu2_.version as version4_2_2_ 
+        from
+            reservations reservatio0_ 
+        inner join
+            salles salle1_ 
+                on reservatio0_.salle_id=salle1_.id 
+        inner join
+            utilisateurs utilisateu2_ 
+                on reservatio0_.utilisateur_id=utilisateu2_.id 
+        where
+            reservatio0_.date_debut>? 
+        order by
+            reservatio0_.date_debut,
+            reservatio0_.id
+Hibernate: 
+    /* select
+        r 
+    from
+        Reservation r 
+    join
+        fetch r.salle 
+    join
+        fetch r.utilisateur 
+    where
+        r.dateDebut<:e 
+        and r.dateFin>:d 
+    order by
+        r.dateDebut,
+        r.id */ select
+            reservatio0_.id as id1_0_0_,
+            salle1_.id as id1_1_1_,
+            utilisateu2_.id as id1_2_2_,
+            reservatio0_.date_debut as date_deb2_0_0_,
+            reservatio0_.date_fin as date_fin3_0_0_,
+            reservatio0_.salle_id as salle_id5_0_0_,
+            reservatio0_.utilisateur_id as utilisat6_0_0_,
+            reservatio0_.version as version4_0_0_,
+            salle1_.capacite as capacite2_1_1_,
+            salle1_.description as descript3_1_1_,
+            salle1_.nom as nom4_1_1_,
+            salle1_.version as version5_1_1_,
+            utilisateu2_.email as email2_2_2_,
+            utilisateu2_.nom as nom3_2_2_,
+            utilisateu2_.version as version4_2_2_ 
+        from
+            reservations reservatio0_ 
+        inner join
+            salles salle1_ 
+                on reservatio0_.salle_id=salle1_.id 
+        inner join
+            utilisateurs utilisateu2_ 
+                on reservatio0_.utilisateur_id=utilisateu2_.id 
+        where
+            reservatio0_.date_debut<? 
+            and reservatio0_.date_fin>? 
+        order by
+            reservatio0_.date_debut,
+            reservatio0_.id
+Par salle=5, par utilisateur=5, après date=1, intersection intervalle=1
+
+=== CRITERIA API ===
+Hibernate: 
+    /* select
+        generatedAlias0 
+    from
+        Reservation as generatedAlias0 
+    inner join
+        generatedAlias0.salle as generatedAlias1 
+    inner join
+        fetch generatedAlias0.salle as generatedAlias2 
+    inner join
+        fetch generatedAlias0.utilisateur as generatedAlias3 
+    where
+        1=1 
+    order by
+        generatedAlias0.dateDebut asc,
+        generatedAlias0.id asc */ select
+            reservatio0_.id as id1_0_0_,
+            salle2_.id as id1_1_1_,
+            utilisateu3_.id as id1_2_2_,
+            reservatio0_.date_debut as date_deb2_0_0_,
+            reservatio0_.date_fin as date_fin3_0_0_,
+            reservatio0_.salle_id as salle_id5_0_0_,
+            reservatio0_.utilisateur_id as utilisat6_0_0_,
+            reservatio0_.version as version4_0_0_,
+            salle2_.capacite as capacite2_1_1_,
+            salle2_.description as descript3_1_1_,
+            salle2_.nom as nom4_1_1_,
+            salle2_.version as version5_1_1_,
+            utilisateu3_.email as email2_2_2_,
+            utilisateu3_.nom as nom3_2_2_,
+            utilisateu3_.version as version4_2_2_ 
+        from
+            reservations reservatio0_ 
+        inner join
+            salles salle1_ 
+                on reservatio0_.salle_id=salle1_.id 
+        inner join
+            salles salle2_ 
+                on reservatio0_.salle_id=salle2_.id 
+        inner join
+            utilisateurs utilisateu3_ 
+                on reservatio0_.utilisateur_id=utilisateu3_.id 
+        where
+            1=1 
+        order by
+            reservatio0_.date_debut asc,
+            reservatio0_.id asc
+Aucun filtre=33
+Hibernate: 
+    /* select
+        generatedAlias0 
+    from
+        Reservation as generatedAlias0 
+    inner join
+        generatedAlias0.salle as generatedAlias1 
+    inner join
+        fetch generatedAlias0.salle as generatedAlias2 
+    inner join
+        fetch generatedAlias0.utilisateur as generatedAlias3 
+    where
+        lower(generatedAlias1.nom) like :param0 escape :param1 
+    order by
+        generatedAlias0.dateDebut asc,
+        generatedAlias0.id asc */ select
+            reservatio0_.id as id1_0_0_,
+            salle2_.id as id1_1_1_,
+            utilisateu3_.id as id1_2_2_,
+            reservatio0_.date_debut as date_deb2_0_0_,
+            reservatio0_.date_fin as date_fin3_0_0_,
+            reservatio0_.salle_id as salle_id5_0_0_,
+            reservatio0_.utilisateur_id as utilisat6_0_0_,
+            reservatio0_.version as version4_0_0_,
+            salle2_.capacite as capacite2_1_1_,
+            salle2_.description as descript3_1_1_,
+            salle2_.nom as nom4_1_1_,
+            salle2_.version as version5_1_1_,
+            utilisateu3_.email as email2_2_2_,
+            utilisateu3_.nom as nom3_2_2_,
+            utilisateu3_.version as version4_2_2_ 
+        from
+            reservations reservatio0_ 
+        inner join
+            salles salle1_ 
+                on reservatio0_.salle_id=salle1_.id 
+        inner join
+            salles salle2_ 
+                on reservatio0_.salle_id=salle2_.id 
+        inner join
+            utilisateurs utilisateu3_ 
+                on reservatio0_.utilisateur_id=utilisateu3_.id 
+        where
+            lower(salle1_.nom) like ? escape ? 
+        order by
+            reservatio0_.date_debut asc,
+            reservatio0_.id asc
+Nom salle=5
+Hibernate: 
+    /* select
+        generatedAlias0 
+    from
+        Reservation as generatedAlias0 
+    inner join
+        generatedAlias0.salle as generatedAlias1 
+    inner join
+        fetch generatedAlias0.salle as generatedAlias2 
+    inner join
+        fetch generatedAlias0.utilisateur as generatedAlias3 
+    where
+        (
+            lower(generatedAlias1.nom) like :param0 escape :param1 
+        ) 
+        and (
+            generatedAlias0.dateFin>:param2 
+        ) 
+        and (
+            generatedAlias0.dateDebut<:param3 
+        ) 
+        and (
+            generatedAlias1.capacite>=20 
+        ) 
+        and (
+            generatedAlias0.utilisateur.id=1L 
+        ) 
+    order by
+        generatedAlias0.dateDebut asc,
+        generatedAlias0.id asc */ select
+            reservatio0_.id as id1_0_0_,
+            salle2_.id as id1_1_1_,
+            utilisateu3_.id as id1_2_2_,
+            reservatio0_.date_debut as date_deb2_0_0_,
+            reservatio0_.date_fin as date_fin3_0_0_,
+            reservatio0_.salle_id as salle_id5_0_0_,
+            reservatio0_.utilisateur_id as utilisat6_0_0_,
+            reservatio0_.version as version4_0_0_,
+            salle2_.capacite as capacite2_1_1_,
+            salle2_.description as descript3_1_1_,
+            salle2_.nom as nom4_1_1_,
+            salle2_.version as version5_1_1_,
+            utilisateu3_.email as email2_2_2_,
+            utilisateu3_.nom as nom3_2_2_,
+            utilisateu3_.version as version4_2_2_ 
+        from
+            reservations reservatio0_ 
+        inner join
+            salles salle1_ 
+                on reservatio0_.salle_id=salle1_.id 
+        inner join
+            salles salle2_ 
+                on reservatio0_.salle_id=salle2_.id 
+        inner join
+            utilisateurs utilisateu3_ 
+                on reservatio0_.utilisateur_id=utilisateu3_.id 
+        where
+            (
+                lower(salle1_.nom) like ? escape ?
+            ) 
+            and reservatio0_.date_fin>? 
+            and reservatio0_.date_debut<? 
+            and salle1_.capacite>=20 
+            and reservatio0_.utilisateur_id=1 
+        order by
+            reservatio0_.date_debut asc,
+            reservatio0_.id asc
+Filtres combinés=1
+Hibernate: 
+    /* select
+        generatedAlias0 
+    from
+        Reservation as generatedAlias0 
+    inner join
+        generatedAlias0.salle as generatedAlias1 
+    inner join
+        fetch generatedAlias0.salle as generatedAlias2 
+    inner join
+        fetch generatedAlias0.utilisateur as generatedAlias3 
+    where
+        lower(generatedAlias1.nom) like :param0 escape :param1 
+    order by
+        generatedAlias0.dateDebut asc,
+        generatedAlias0.id asc */ select
+            reservatio0_.id as id1_0_0_,
+            salle2_.id as id1_1_1_,
+            utilisateu3_.id as id1_2_2_,
+            reservatio0_.date_debut as date_deb2_0_0_,
+            reservatio0_.date_fin as date_fin3_0_0_,
+            reservatio0_.salle_id as salle_id5_0_0_,
+            reservatio0_.utilisateur_id as utilisat6_0_0_,
+            reservatio0_.version as version4_0_0_,
+            salle2_.capacite as capacite2_1_1_,
+            salle2_.description as descript3_1_1_,
+            salle2_.nom as nom4_1_1_,
+            salle2_.version as version5_1_1_,
+            utilisateu3_.email as email2_2_2_,
+            utilisateu3_.nom as nom3_2_2_,
+            utilisateu3_.version as version4_2_2_ 
+        from
+            reservations reservatio0_ 
+        inner join
+            salles salle1_ 
+                on reservatio0_.salle_id=salle1_.id 
+        inner join
+            salles salle2_ 
+                on reservatio0_.salle_id=salle2_.id 
+        inner join
+            utilisateurs utilisateu3_ 
+                on reservatio0_.utilisateur_id=utilisateu3_.id 
+        where
+            lower(salle1_.nom) like ? escape ? 
+        order by
+            reservatio0_.date_debut asc,
+            reservatio0_.id asc
+Aucun résultat=0
+

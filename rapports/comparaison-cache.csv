@@ -1,0 +1,3 @@
+mode,hits,misses,puts,prepared_statements,duree_ms
+actif,1,1,1,1,4.8185
+desactive,0,0,0,2,6.3999

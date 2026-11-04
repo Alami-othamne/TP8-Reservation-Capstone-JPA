@@ -1,0 +1,33 @@
+﻿Extraits exacts de resultats/mainapp-complet.txt ; SQL conservé.
+=== TEST CACHE SECOND NIVEAU ===
+Hibernate: 
+    select
+        salle0_.id as id1_1_0_,
+        salle0_.capacite as capacite2_1_0_,
+        salle0_.description as descript3_1_0_,
+        salle0_.nom as nom4_1_0_,
+        salle0_.version as version5_1_0_ 
+    from
+        salles salle0_ 
+    where
+        salle0_.id=?
+Cache L2 actif, 2 EntityManager distincts : CacheSample[hits=1, misses=1, puts=1, sql=1, ms=4.8185]
+Cache désactivé, 2 EntityManager distincts : CacheSample[hits=0, misses=0, puts=0, sql=2, ms=6.3999]
+Hibernate: 
+    /* select
+        s 
+    from
+        Salle s 
+    order by
+        s.id */ select
+            salle0_.id as id1_1_,
+            salle0_.capacite as capacite2_1_,
+            salle0_.description as descript3_1_,
+            salle0_.nom as nom4_1_,
+            salle0_.version as version5_1_ 
+        from
+            salles salle0_ 
+        order by
+            salle0_.id
+Query Cache (hint explicite) : hits supplémentaires=1
+

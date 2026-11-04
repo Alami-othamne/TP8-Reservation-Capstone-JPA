@@ -1,0 +1,257 @@
+﻿Extraits exacts de resultats/mainapp-complet.txt ; SQL conservé.
+=== TEST VERROUILLAGE OPTIMISTE ===
+Hibernate: 
+    select
+        reservatio0_.id as id1_0_0_,
+        reservatio0_.date_debut as date_deb2_0_0_,
+        reservatio0_.date_fin as date_fin3_0_0_,
+        reservatio0_.salle_id as salle_id5_0_0_,
+        reservatio0_.utilisateur_id as utilisat6_0_0_,
+        reservatio0_.version as version4_0_0_ 
+    from
+        reservations reservatio0_ 
+    where
+        reservatio0_.id=?
+Hibernate: 
+    select
+        reservatio0_.id as id1_0_0_,
+        reservatio0_.date_debut as date_deb2_0_0_,
+        reservatio0_.date_fin as date_fin3_0_0_,
+        reservatio0_.salle_id as salle_id5_0_0_,
+        reservatio0_.utilisateur_id as utilisat6_0_0_,
+        reservatio0_.version as version4_0_0_ 
+    from
+        reservations reservatio0_ 
+    where
+        reservatio0_.id=?
+Versions initiales : EM1=1, EM2=1
+Hibernate: 
+    /* update
+        com.example.model.Reservation */ update
+            reservations 
+        set
+            date_debut=?,
+            date_fin=?,
+            salle_id=?,
+            utilisateur_id=?,
+            version=? 
+        where
+            id=? 
+            and version=?
+EM1 commit : version=2
+Hibernate: 
+    /* update
+        com.example.model.Reservation */ update
+            reservations 
+        set
+            date_debut=?,
+            date_fin=?,
+            salle_id=?,
+            utilisateur_id=?,
+            version=? 
+        where
+            id=? 
+            and version=?
+Hibernate: 
+    select
+        reservatio0_.id as id1_0_0_,
+        reservatio0_.date_debut as date_deb2_0_0_,
+        reservatio0_.date_fin as date_fin3_0_0_,
+        reservatio0_.salle_id as salle_id5_0_0_,
+        reservatio0_.utilisateur_id as utilisat6_0_0_,
+        reservatio0_.version as version4_0_0_ 
+    from
+        reservations reservatio0_ 
+    where
+        reservatio0_.id=?
+Conflit optimiste réel détecté ; EM2 rollback effectué, transaction active=false
+Hibernate: 
+    select
+        reservatio0_.id as id1_0_0_,
+        reservatio0_.date_debut as date_deb2_0_0_,
+        reservatio0_.date_fin as date_fin3_0_0_,
+        reservatio0_.salle_id as salle_id5_0_0_,
+        reservatio0_.utilisateur_id as utilisat6_0_0_,
+        reservatio0_.version as version4_0_0_ 
+    from
+        reservations reservatio0_ 
+    where
+        reservatio0_.id=?
+Première modification conservée : 2027-02-02T16:05
+
+=== TEST CREATIONS CONCURRENTES ===
+Hibernate: 
+    select
+        salle0_.id as id1_1_0_,
+        salle0_.capacite as capacite2_1_0_,
+        salle0_.description as descript3_1_0_,
+        salle0_.nom as nom4_1_0_,
+        salle0_.version as version5_1_0_ 
+    from
+        salles salle0_ 
+    where
+        salle0_.id=? for update
+            
+Hibernate: 
+    select
+        salle0_.id as id1_1_0_,
+        salle0_.capacite as capacite2_1_0_,
+        salle0_.description as descript3_1_0_,
+        salle0_.nom as nom4_1_0_,
+        salle0_.version as version5_1_0_ 
+    from
+        salles salle0_ 
+    where
+        salle0_.id=? for update
+            
+Hibernate: 
+    select
+        utilisateu0_.id as id1_2_0_,
+        utilisateu0_.email as email2_2_0_,
+        utilisateu0_.nom as nom3_2_0_,
+        utilisateu0_.version as version4_2_0_ 
+    from
+        utilisateurs utilisateu0_ 
+    where
+        utilisateu0_.id=?
+Hibernate: 
+    /* select
+        count(r) 
+    from
+        Reservation r 
+    where
+        r.salle.id=:s 
+        and r.dateDebut<:e 
+        and r.dateFin>:d */ select
+            count(reservatio0_.id) as col_0_0_ 
+        from
+            reservations reservatio0_ 
+        where
+            reservatio0_.salle_id=? 
+            and reservatio0_.date_debut<? 
+            and reservatio0_.date_fin>?
+Hibernate: 
+    /* insert com.example.model.Reservation
+        */ insert 
+        into
+            reservations
+            (id, date_debut, date_fin, salle_id, utilisateur_id, version) 
+        values
+            (null, ?, ?, ?, ?, ?)
+Hibernate: 
+    select
+        utilisateu0_.id as id1_2_0_,
+        utilisateu0_.email as email2_2_0_,
+        utilisateu0_.nom as nom3_2_0_,
+        utilisateu0_.version as version4_2_0_ 
+    from
+        utilisateurs utilisateu0_ 
+    where
+        utilisateu0_.id=?
+Hibernate: 
+    /* select
+        count(r) 
+    from
+        Reservation r 
+    where
+        r.salle.id=:s 
+        and r.dateDebut<:e 
+        and r.dateFin>:d */ select
+            count(reservatio0_.id) as col_0_0_ 
+        from
+            reservations reservatio0_ 
+        where
+            reservatio0_.salle_id=? 
+            and reservatio0_.date_debut<? 
+            and reservatio0_.date_fin>?
+Hibernate: 
+    /* select
+        count(r) 
+    from
+        Reservation r 
+    where
+        r.salle.id=:s 
+        and r.dateDebut=:d */ select
+            count(reservatio0_.id) as col_0_0_ 
+        from
+            reservations reservatio0_ 
+        where
+            reservatio0_.salle_id=? 
+            and reservatio0_.date_debut=?
+2 créations simultanées : commits=1, refus de chevauchement=1, lignes enregistrées=1
+Hibernate: 
+    /* select
+        r 
+    from
+        Reservation r 
+    join
+        fetch r.salle 
+    join
+        fetch r.utilisateur 
+    where
+        r.dateDebut<:e 
+        and r.dateFin>:d 
+    order by
+        r.dateDebut,
+        r.id */ select
+            reservatio0_.id as id1_0_0_,
+            salle1_.id as id1_1_1_,
+            utilisateu2_.id as id1_2_2_,
+            reservatio0_.date_debut as date_deb2_0_0_,
+            reservatio0_.date_fin as date_fin3_0_0_,
+            reservatio0_.salle_id as salle_id5_0_0_,
+            reservatio0_.utilisateur_id as utilisat6_0_0_,
+            reservatio0_.version as version4_0_0_,
+            salle1_.capacite as capacite2_1_1_,
+            salle1_.description as descript3_1_1_,
+            salle1_.nom as nom4_1_1_,
+            salle1_.version as version5_1_1_,
+            utilisateu2_.email as email2_2_2_,
+            utilisateu2_.nom as nom3_2_2_,
+            utilisateu2_.version as version4_2_2_ 
+        from
+            reservations reservatio0_ 
+        inner join
+            salles salle1_ 
+                on reservatio0_.salle_id=salle1_.id 
+        inner join
+            utilisateurs utilisateu2_ 
+                on reservatio0_.utilisateur_id=utilisateu2_.id 
+        where
+            reservatio0_.date_debut<? 
+            and reservatio0_.date_fin>? 
+        order by
+            reservatio0_.date_debut,
+            reservatio0_.id
+Hibernate: 
+    select
+        reservatio0_.id as id1_0_0_,
+        reservatio0_.date_debut as date_deb2_0_0_,
+        reservatio0_.date_fin as date_fin3_0_0_,
+        reservatio0_.salle_id as salle_id5_0_0_,
+        reservatio0_.utilisateur_id as utilisat6_0_0_,
+        reservatio0_.version as version4_0_0_ 
+    from
+        reservations reservatio0_ 
+    where
+        reservatio0_.id=?
+Hibernate: 
+    select
+        salle0_.id as id1_1_0_,
+        salle0_.capacite as capacite2_1_0_,
+        salle0_.description as descript3_1_0_,
+        salle0_.nom as nom4_1_0_,
+        salle0_.version as version5_1_0_ 
+    from
+        salles salle0_ 
+    where
+        salle0_.id=? for update
+            
+Hibernate: 
+    /* delete com.example.model.Reservation */ delete 
+        from
+            reservations 
+        where
+            id=? 
+            and version=?
+
